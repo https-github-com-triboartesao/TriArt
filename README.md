@@ -2,7 +2,7 @@
 
 ##
 
-😎 Integrantes da Equipe
+😎 #Integrantes da Equipe
 * Brenda Chagas Lima - https://github.com/Brehchs
 * Flavio Messias - https://github.com/FlavioMessias
 * Leonardo Goncalves da Silva - https://github.com/leogs2003
