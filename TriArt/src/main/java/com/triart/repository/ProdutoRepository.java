@@ -20,6 +20,5 @@ public interface ProdutoRepository extends JpaRepository<Produto, Long>{
 	@Query(value = "select * from tb_produtos where preco between :inicio and :fim", nativeQuery = true)
 	public List<Produto> buscarProdutosEntre(@Param("inicio") BigDecimal inicio, @Param("fim") BigDecimal fim);
 	
-	public List<Produto> findByIn(List<BigDecimal> preco);
-
+	public List<Produto> findByPrecoIn(List<BigDecimal> preco);
 }

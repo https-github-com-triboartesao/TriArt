@@ -21,7 +21,7 @@ import com.triart.model.Categoria;
 import com.triart.repository.CategoriaRepository;
 
 @RestController
-@RequestMapping
+@RequestMapping("/categorias")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class CategoriaController {
 	
@@ -59,7 +59,7 @@ public class CategoriaController {
 			.orElse(ResponseEntity.notFound().build());
 	}
 	
-	@DeleteMapping("/{id")
+	@DeleteMapping("/{id}")
 	public ResponseEntity<?>deleteCategoria(@PathVariable Long id){
 		return categoriaRepository.findById(id)
 			.map(resposta -> {

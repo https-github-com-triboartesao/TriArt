@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.triart.model.Usuarios;
+import com.triart.model.Usuario;
 import com.triart.repository.UsuarioRepository;
 
 @RestController
@@ -25,7 +25,7 @@ public class UsuarioController {
 	private UsuarioRepository usuarioRepository;
 	
 	@GetMapping("/listar")
-	public ResponseEntity<List<Usuarios>>getAll(){
+	public ResponseEntity<List<Usuario>>getAll(){
 		return ResponseEntity.ok(usuarioRepository.findAll());
 	}
 	

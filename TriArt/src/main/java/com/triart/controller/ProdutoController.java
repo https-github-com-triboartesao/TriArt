@@ -22,7 +22,7 @@ import com.triart.repository.CategoriaRepository;
 import com.triart.repository.ProdutoRepository;
 
 @RestController
-@RequestMapping
+@RequestMapping("/produtos")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class ProdutoController {
 

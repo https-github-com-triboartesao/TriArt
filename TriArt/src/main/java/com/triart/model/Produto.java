@@ -86,12 +86,12 @@ public class Produto {
 	}
 
 	public Categoria getCategoria() {
-		return getCategoria();
+		return categoria;
 	}
-	
+
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
 	}
 
-}
 	
+}
