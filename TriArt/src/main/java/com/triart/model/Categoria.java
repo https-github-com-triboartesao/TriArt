@@ -7,6 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 
+//Criação da tabela no DB
 @Entity
 @Table(name = "tb_categoria")
 public class Categoria {
