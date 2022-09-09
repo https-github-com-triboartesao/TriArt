@@ -33,8 +33,8 @@ public class Produto {
 	@Size(min=10, max=1000)
 	private String descricao;
 	
-	@NotBlank
-	private Integer quantidade;
+	@NotNull
+	private int quantidade;
 	
 	@JsonFormat(shape = JsonFormat.Shape.STRING)
 	@NotNull
@@ -73,11 +73,11 @@ public class Produto {
 		this.descricao = descricao;
 	}
 
-	public Integer getQuantidade() {
+	public int getQuantidade() {
 		return quantidade;
 	}
 
-	public void setQuantidade(Integer quantidade) {
+	public void setQuantidade(int quantidade) {
 		this.quantidade = quantidade;
 	}
 
