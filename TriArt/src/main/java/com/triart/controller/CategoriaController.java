@@ -28,11 +28,13 @@ public class CategoriaController {
 	@Autowired 
 	private CategoriaRepository categoriaRepository;
 	
+	
 	@GetMapping
 	private ResponseEntity<List<Categoria>>getAll(){
 		return ResponseEntity.ok(categoriaRepository.findAll());
 	}
-
+	
+	//pesquisa de ID
 	@GetMapping("/{id}")
 	private ResponseEntity<Categoria>getById(@PathVariable Long id){
 		return categoriaRepository.findById(id)
