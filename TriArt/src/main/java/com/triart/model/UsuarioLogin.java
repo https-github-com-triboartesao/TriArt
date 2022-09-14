@@ -6,7 +6,7 @@ public class UsuarioLogin {
 	private String nome;
 	private String usuario;
 	private String senha;
-	private String foto;
+	private String foto; //não é opcional
 	private String token;
 
 	public Long getId() {
