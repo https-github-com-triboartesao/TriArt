@@ -34,11 +34,7 @@ public class Produto {
 	private String descricao;
 	
 	@NotNull
-<<<<<<< HEAD
-	private Integer quantidade;
-=======
 	private int quantidade;
->>>>>>> d0beb8031adb3e9cab7f44fa690d29027a94b7e4
 	
 	@JsonFormat(shape = JsonFormat.Shape.STRING)
 	@NotNull
