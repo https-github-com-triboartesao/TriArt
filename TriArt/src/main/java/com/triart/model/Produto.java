@@ -33,7 +33,7 @@ public class Produto {
 	@Size(min=10, max=1000)
 	private String descricao;
 	
-	@NotBlank
+	@NotNull
 	private Integer quantidade;
 	
 	@JsonFormat(shape = JsonFormat.Shape.STRING)
