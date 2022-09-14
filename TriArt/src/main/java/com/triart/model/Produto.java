@@ -34,7 +34,11 @@ public class Produto {
 	private String descricao;
 	
 	@NotNull
+<<<<<<< HEAD
 	private Integer quantidade;
+=======
+	private int quantidade;
+>>>>>>> d0beb8031adb3e9cab7f44fa690d29027a94b7e4
 	
 	@JsonFormat(shape = JsonFormat.Shape.STRING)
 	@NotNull
@@ -73,11 +77,11 @@ public class Produto {
 		this.descricao = descricao;
 	}
 
-	public Integer getQuantidade() {
+	public int getQuantidade() {
 		return quantidade;
 	}
 
-	public void setQuantidade(Integer quantidade) {
+	public void setQuantidade(int quantidade) {
 		this.quantidade = quantidade;
 	}
 
